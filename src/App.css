@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+.App {
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.icons:hover {
+  background: "black";
+  color: "teal.500";
+}
+
+#navbar .active,
+#navbar:hover {
+  color: #2b6cb0;
+  /* font-weight: bold; */
+  text-underline-offset: 10px;
+  cursor: pointer;
+}
+
+#name {
+  color: #1a202c;
+}
+
+#name > span {
+  font-weight: bold;
+  color: #2b6cb0;
+  display: inline-block;
+}
+#logo {
+  font-family: cursive;
+  /* letter-spacing: 2px; */
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  #logo {
+    font-size: 1.89rem;
+  }
+}
+
+#arrow {
+  display: block;
+  margin: auto;
+}
+#resume {
+  margin: 2% 0;
+  padding: 0 3%;
+  border: 1px solid black;
+  /* border-radius: 0; */
+}
+#profile {
+  background-color: #d6d6d6;
+  border-radius: 50%;
+}
+
+#profile img {
+  display: block;
+  margin: 6% auto;
+  border-radius: 50%;
+}
+
+.heading {
+  color: #d0d9e1;
+  text-transform: uppercase;
+  text-align: left;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.heading > p:nth-of-type(2) {
+  color: black;
+  position: absolute;
+  bottom: 15px;
+  left: 0px;
+  letter-spacing: 2px;
+}
+
+.subHead {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border-bottom: 1px solid black;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+.subHead:hover {
+  background-color: #2b6cb0;
+  color: white;
+  cursor: pointer;
+}
+
+#contact-icons img {
+  width: 30px;
+  height: 30px;
+}
+#techStack {
+  border: 1px solid #b8bfc7;
+  border-bottom: 0px;
+  border-radius: 5px;
+}
+
+#techStack > div {
+  padding: 20px;
+  border-right: 1px solid rgba(0, 0, 0, 0.116);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+}
+#techStack > div:hover {
+  background-color: #2b6cb0;
+  cursor: pointer;
+}
+
+#techStack img {
+  display: block;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+}
+
+#techStack p {
+  color: black;
+  font-size: 1rem;
+  padding: 10px 0;
+  letter-spacing: 1px;
+}
+
+#skills img {
+  width: 30px;
+}
+#skills > div {
+  height: fit-content;
+  border: 1px solid rgba(129, 129, 129, 0.103);
+  border-radius: 10px;
+  padding: 4%;
+}
+#skills > div > div {
+  font-size: 1rem;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.255);
+  border-radius: 5px;
+  padding: 5px 20px;
+  height: 70px;
+  /* grid-auto-flow: column; */
+}
+#skills > div > div > p {
+  margin-left: 10px;
+}
+#skills > div > div:hover {
+  background-color: #2b6cb0;
+  cursor: pointer;
+}
+
+#projects > div {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  text-align: left;
+  border-radius: 10px;
+}
+
+#projects > div:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  background: #2b6cb0;
+  color: white;
+}
+
+#projects > div > div {
+  padding: 10px;
+}
+.projectbuttons button {
+  font-weight: 100;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+.live {
+  background-color: rgba(0, 0, 0, 0.637);
+  color: white;
+}
+.live:hover {
+  background-color: rgba(0, 0, 0, 0.637);
+  border: 1px solid rgba(0, 0, 0, 0.637);
+  border-radius: 5px;
+}
+.gitCode {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.projectbuttons button:hover {
+  background-color: #2b6cb0;
+  color: white;
+  border-radius: 5px;
+}
+
+.tech {
+  gap: 5px;
+  font-size: 012px;
+  flex-wrap: wrap;
+}
+.tech > div {
+  color: grey;
+  border: 1px solid rgba(0, 0, 0, 0.082);
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0.4rem;
+}
+
+#statistics {
+  justify-content: center;
+  align-items: center;
+}
+
+#statistics > div {
+  justify-content: center;
+  align-items: center;
+}
+
+#statistics > div > div {
+  padding: 20px 20px;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#background-text {
+  color: rgba(128, 128, 128, 0.089);
+}
+
+.section {
+  width: 100%;
+  justify-content: center;
+}
+
+#Contact a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#Contact img {
+  width: 50px;
+  height: 50px;
+}
+
+#contact-list img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1008px) {
+  .linkSocal {
+    border: 1px solid #9ba2a8;
+    padding: 5px 20px;
+    border-radius: 5px;
+  }
+
+  .linkSocal:hover {
+    background-color: #2b6cb0;
+    cursor: pointer;
+    color: white;
+  }
+  .stats-grid {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .stats-grid {
+    margin-left: -12%;
+  }
+}
