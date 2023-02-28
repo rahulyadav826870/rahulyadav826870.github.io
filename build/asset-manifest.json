@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.903ab953.css",
+    "main.js": "/static/js/main.575df8d5.js",
+    "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/travelworld.png": "/static/media/travelworld.51accf8a10d05dce2173.png",
+    "static/media/ndtv.png": "/static/media/ndtv.b0394a0907cd961a5ffe.png",
+    "static/media/ndtv2.png": "/static/media/ndtv2.0f90f69ff1443d96cfe7.png",
+    "static/media/dotkey.png": "/static/media/dotkey.8b4eadea43f9f8db4f2e.png",
+    "static/media/Rahul_ Yadav_Resume.pdf": "/static/media/Rahul_ Yadav_Resume.cfb0903701109cafe07b.pdf",
+    "static/media/profile.jpg": "/static/media/profile.22cd4780871498b2bf6f.jpg",
+    "static/media/active.png": "/static/media/active.d8d9fa3e15cf0ffd3204.png",
+    "static/media/collab.png": "/static/media/collab.bfa728ed7c702ca76997.png",
+    "static/media/problem.png": "/static/media/problem.6fe9b0b713f54ffc430f.png",
+    "static/media/linked.png": "/static/media/linked.41a23f98c77f41c13b8e.png",
+    "static/media/email.png": "/static/media/email.00b77611c2b53e1aed4a.png",
+    "static/media/mail.png": "/static/media/mail.00b77611c2b53e1aed4a.png",
+    "static/media/reactpng.png": "/static/media/reactpng.5cb83655567dd3efc230.png",
+    "static/media/phone.png": "/static/media/phone.b76498e5c124d5213615.png",
+    "static/media/nodejs.png": "/static/media/nodejs.1393f8adffcb082e75ea.png",
+    "index.html": "/index.html",
+    "main.903ab953.css.map": "/static/css/main.903ab953.css.map",
+    "main.575df8d5.js.map": "/static/js/main.575df8d5.js.map",
+    "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.903ab953.css",
+    "static/js/main.575df8d5.js"
+  ]
+}
