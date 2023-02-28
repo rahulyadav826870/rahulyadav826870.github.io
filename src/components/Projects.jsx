@@ -3,6 +3,13 @@ import Heading from "./Heading";
 import ProjectCard from "./ProjectCard";
 
 const ProjectDetails = [
+  // {
+  //   title: "MovieMatrix.com",
+  //   src: "../images/Projects/MovieMatrix.png",
+  //   desc: "MovieMatrix is one stop solution for any information regarding movies, web series, tv-shows, you can find trailers, details add reviews or make a watchlist. We provide smart content search & recommendations.",
+  //   tech: ["HTML", "css", "JavaScript","React", "Express","Mongodb","Node-js", "React-Redux", "React-Router","Chakra-UI"],
+  //   features: ["Authentication, Sorting & Filtering functionalities"],
+  // },
   {
     title: "NDTV.com",
     src: "../images/Projects/ndtv.png",

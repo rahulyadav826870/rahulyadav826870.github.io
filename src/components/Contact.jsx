@@ -10,7 +10,7 @@ export default function Contact() {
       m="100px auto"
       w={{ sm: "80%", base: "80%", md: "90%", lg: "100%" }}
     >
-      <Heading title={"CONTACT ME"} />
+      <Heading title={"CONTACT ME"} textAlign="center" />
       <Grid>
         <Text>Get in Touch</Text>
         <Text fontSize="2rem">JUST SAY HELLO!</Text>

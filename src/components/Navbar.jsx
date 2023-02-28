@@ -6,9 +6,6 @@ import {
   IconButton,
   Menu,
   MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
   Stack,
@@ -18,6 +15,23 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { Button, Text } from "@chakra-ui/react";
 
 const Links = ["About", "Technologies", "Skills", "Projects", "Contact"];
+const Links1 = [
+  "About",
+  "Technologies",
+  "Skills",
+  "Projects",
+  "Contact",
+  "Resume",
+];
+const handleClick = (link) => {
+  if (link === "Resume") {
+    const url = require("../images/Rahul_ Yadav_Resume.pdf");
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "Rahul_Yadav_Resume.pdf";
+    link.click();
+  }
+};
 
 const NavLink = ({ children }) => (
   <Link
@@ -90,9 +104,15 @@ export default function Simple() {
                 </NavLink>
               ))}
               <a
-                href={require("../images/Rahul_Yadav_Resume.pdf")}
+                href={require("../images/Rahul_ Yadav_Resume.pdf")}
                 download="Rahul-Yadav-Resume"
                 style={{ marginLeft: "190px" }}
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/1RwICxH9fGoSBR_vLw8U_ngROQ8WDDV5U/view?usp=sharing",
+                    "_blank"
+                  )
+                }
               >
                 <Button
                   display={{ base: "none", sm: "none", lg: "block" }}
@@ -116,12 +136,6 @@ export default function Simple() {
                 cursor={"pointer"}
                 minW={0}
               ></MenuButton>
-              <MenuList>
-                <MenuItem>Link 1</MenuItem>
-                <MenuItem>Link 2</MenuItem>
-                <MenuDivider />
-                <MenuItem>Link 3</MenuItem>
-              </MenuList>
             </Menu>
           </Flex>
         </Flex>
@@ -129,18 +143,31 @@ export default function Simple() {
         {isOpen ? (
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
-              {Links.map((link) => (
+              {Links1.map((link) => (
                 <Box>
-                  {/* <Button
-                    onClick={isOpen ? onClose : onOpen}
-                    icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-                  > */}
+              
+{
+  link ==="Resume"?
 
-                  <NavLink className="active" key={link}>
-                    {link}
+                  <NavLink
+                    className="active"
+                    key={link}
+                    onClick={() => handleClick(link)}
+                    
+                  >
+                   <button onClick={() => handleClick(link)}> {link}</button>
+                   
+                  </NavLink>: <NavLink
+                    className="active"
+                    key={link}
+                    onClick={() => handleClick(link)}
+                    
+                  >
+                   {link}
                   </NavLink>
+}
 
-                  {/* </Button> */}
+             
                 </Box>
               ))}
             </Stack>

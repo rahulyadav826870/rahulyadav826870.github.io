@@ -36,8 +36,9 @@ export default function Introduction() {
       </Text>
 
       <a
-        href={require("../images/Rahul_Yadav_Resume.pdf")}
+        href={require("../images/Rahul_ Yadav_Resume.pdf")}
         download="Rahul-Yadav-Resume"
+        onClick={()=>window.open("https://drive.google.com/file/d/1RwICxH9fGoSBR_vLw8U_ngROQ8WDDV5U/view?usp=sharing","_blank" ) } 
       >
         <Button
           variant="outline"
