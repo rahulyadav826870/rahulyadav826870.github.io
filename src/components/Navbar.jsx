@@ -38,6 +38,7 @@ const NavLink = ({ children }) => (
     id="navbar"
     px={2}
     py={1}
+    
     rounded={"md"}
     _hover={{
       textDecoration: "none",
@@ -91,7 +92,7 @@ export default function Simple() {
           />
           <HStack spacing={8} alignItems={"center"}>
             {/* <Box>Rahul Yadav</Box> */}
-            <Text id="logo">Rahul</Text>
+            <Text id="logo" _hover={{ color:"#2b6cb0"}}>Rahul</Text>
             <HStack
               style={{ marginLeft: "250px" }}
               as={"nav"}
@@ -99,9 +100,12 @@ export default function Simple() {
               display={{ base: "none", md: "flex" }}
             >
               {Links.map((link) => (
-                <NavLink className="active" key={link} offset={-70}>
+                <Text fontSize={'18px'}>
+<NavLink  className="active" key={link} offset={-70}>
                   {link}
                 </NavLink>
+                </Text>
+                
               ))}
               <a
                 href={require("../images/Rahul_ Yadav_Resume.pdf")}
@@ -109,18 +113,20 @@ export default function Simple() {
                 style={{ marginLeft: "190px" }}
                 onClick={() =>
                   window.open(
-                    "https://drive.google.com/file/d/1RwICxH9fGoSBR_vLw8U_ngROQ8WDDV5U/view?usp=sharing",
+                    "https://drive.google.com/file/d/1H2AQoUz9R7FEoyvKUpfZriguWmjrWiKh/view?usp=sharing",
                     "_blank"
                   )
                 }
               >
                 <Button
+                style={{padding:" 0 25%"}}
                   display={{ base: "none", sm: "none", lg: "block" }}
                   variant="outline"
                   id="resume"
                   _hover={{ bg: "#2b6cb0", color: "white" }}
                   letterSpacing={1}
                   fontSize={"14px"}
+                 
                 >
                   RESUME
                 </Button>

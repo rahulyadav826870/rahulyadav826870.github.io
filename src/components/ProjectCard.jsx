@@ -11,7 +11,7 @@ export default function ProjectCard({ details }) {
       <Text fontSize="0.8rem">TECH STACK: </Text>
       <Flex className="tech">
         {details.tech.map((t, index) => (
-          <Box _hover={{ color: "white" }} key={index}>
+          <Box _hover={{ color:"whiteAlpha.800"}} key={index}>
             {t}{" "}
           </Box>
         ))}

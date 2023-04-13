@@ -1,15 +1,9 @@
-import { Grid } from "@chakra-ui/react";
+import { Grid,Text } from "@chakra-ui/react";
 import Heading from "./Heading";
 import ProjectCard from "./ProjectCard";
 
 const ProjectDetails = [
-  // {
-  //   title: "MovieMatrix.com",
-  //   src: "../images/Projects/MovieMatrix.png",
-  //   desc: "MovieMatrix is one stop solution for any information regarding movies, web series, tv-shows, you can find trailers, details add reviews or make a watchlist. We provide smart content search & recommendations.",
-  //   tech: ["HTML", "css", "JavaScript","React", "Express","Mongodb","Node-js", "React-Redux", "React-Router","Chakra-UI"],
-  //   features: ["Authentication, Sorting & Filtering functionalities"],
-  // },
+ 
   {
     title: "NDTV.com",
     src: "../images/Projects/ndtv.png",
@@ -60,6 +54,20 @@ const ProjectDetails = [
       "Login &Signup for users",
     ],
   },
+   {
+    title: "MovieMatrix.com",
+    src: "../images/Projects/MovieMatrix.png",
+    desc: "MovieMatrix is one stop solution for any information regarding movies, web series, tv-shows, you can find trailers, details add reviews or make a watchlist. We provide smart content search & recommendations.",
+    tech: ["HTML", "css", "JavaScript","React", "Express","Mongodb","Node-js", "React-Redux", "React-Router","Chakra-UI"],
+    features: ["Authentication, Sorting & Filtering functionalities"],
+  },
+  {
+    title: "MarketLink.com",
+    src: "../images/Projects/marketLink.png",
+    desc: "Online Shopping & Reselling site in India - Buy & Sell best quality Fashion, Electronics, Home & Kitchen products at lowest prices.",
+    tech: ["HTML", "css", "JavaScript","React", "React-Router","ChakraUI","Redux", "React-Redux", "Redux-Thunk","Tailwind"],
+    features: ["Authentication, DAYNAMIC PRODUCT,ADD TO CART","FILTERING","PAYMENT"],
+  },
 ];
 
 export default function Projects() {
@@ -77,12 +85,80 @@ export default function Projects() {
           base: "1fr",
           sm: "1fr",
           md: "repeat(2,1fr)",
-          lg: "repeat(4,1fr)",
+          lg: "repeat(3,1fr)",
         }}
         gap="50px"
         pos="relative"
       >
-        <Grid>
+
+<Grid pos={"relative"}>
+        <Text pos={"absolute"} fontSize="3rem" top={"-10"} left={{base:"0",lg:"0"}} >01</Text>
+          <img
+            src={require("../images/Projects/MovieMatrix.png")}
+            style={{ borderRadius: "10px" }}
+            alt=""
+          />
+          <ProjectCard key={2} details={ProjectDetails[4]} />
+          <Grid
+            templateColumns="1fr 1fr"
+            m="10px"
+            gap="10px"
+            className="projectbuttons"
+          >
+            <a
+              href="https://github.com/hr927/MovieMatrix-Zee5_Clone"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button variant="outline" className="gitCode">
+                CODE
+              </button>
+            </a>
+            <a
+              href="https://moviematrix.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="live">LIVE</button>
+            </a>
+          </Grid>
+        </Grid>
+
+        <Grid pos={"relative"}>
+        <Text pos={"absolute"} fontSize="3rem" top={"-10"} left={{base:"0",lg:"0"}} >02</Text>
+          <img
+            src={require("../images/Projects/marketLink.png")}
+            style={{ borderRadius: "10px" }}
+            alt=""
+          />
+          <ProjectCard key={2} details={ProjectDetails[5]} />
+          <Grid
+            templateColumns="1fr 1fr"
+            m="10px"
+            gap="10px"
+            className="projectbuttons"
+          >
+            <a
+              href="https://github.com/santoshy1101/questionable-milk-2896"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button variant="outline" className="gitCode">
+                CODE
+              </button>
+            </a>
+            <a
+              href="https://poetic-cobbler-9476b0.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="live">LIVE</button>
+            </a>
+          </Grid>
+        </Grid>
+
+        <Grid pos={"relative"}>
+        <Text  _hover={{color:"black"}} pos={"absolute"} fontSize="3rem" top={"-10"} left={{base:"0",lg:"0"}} >03</Text>
           <img
             src={require("../images/Projects/ndtv.png")}
             style={{ borderRadius: "10px" }}
@@ -114,7 +190,8 @@ export default function Projects() {
           </Grid>
         </Grid>
 
-        <Grid>
+        <Grid pos={"relative"}>
+        <Text pos={"absolute"} fontSize="3rem" top={"-10"} left={{base:"0",lg:"0"}} >04</Text>
           <img
             src={require("../images/Projects/dotkey.png")}
             style={{ borderRadius: "10px" }}
@@ -146,7 +223,8 @@ export default function Projects() {
           </Grid>
         </Grid>
 
-        <Grid>
+        <Grid pos={"relative"}>
+        <Text pos={"absolute"} fontSize="3rem" top={"-10"} left={{base:"0",lg:"0"}} >05</Text>
           <img
             src={require("../images/Projects/travelworld.png")}
             style={{ borderRadius: "10px" }}
@@ -178,7 +256,8 @@ export default function Projects() {
           </Grid>
         </Grid>
 
-        <Grid>
+        <Grid pos={"relative"}>
+        <Text pos={"absolute"} fontSize="3rem" top={"-10"} left={{base:"0",lg:"0"}} >06</Text>
           <img
             src={require("../images/Projects/ndtv2.png")}
             style={{ borderRadius: "10px" }}
@@ -209,6 +288,7 @@ export default function Projects() {
             </a>
           </Grid>
         </Grid>
+
       </Grid>
     </Grid>
   );
